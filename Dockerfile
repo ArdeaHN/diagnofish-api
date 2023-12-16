@@ -12,7 +12,7 @@ COPY go.mod .
 COPY go.sum .
 
 # Download and install dependencies
-RUN go mod download
+RUN go mod tidy
 
 # Copy the entire project to the working directory
 COPY . .
@@ -21,4 +21,4 @@ COPY . .
 RUN go build -o binary
 
 # Command to run the executable
-ENTRYPOINT ["./binary"]
+ENTRYPOINT ["/app/binary"]
