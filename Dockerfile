@@ -21,7 +21,7 @@ COPY . .
 RUN go build -o binary
 
 # Expose the port on which the application will run (if needed)
-# EXPOSE 8080
+EXPOSE 8080
 
 # Command to run the executable
 ENTRYPOINT ["./binary"]
