@@ -12,6 +12,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
+	"cloud.google.com/go/cloudsqlconn"
+        "cloud.google.com/go/cloudsqlconn/postgres/pgxv4"
 )
 
 type APIHandler struct {
