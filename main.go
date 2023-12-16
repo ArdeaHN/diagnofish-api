@@ -41,7 +41,6 @@ func main() {
 			Password:     "123",
 			DatabaseName: "diagnofish",
 			Port:         5432,
-			Schema:       "public",
 		}
 
 		conn, err := db.Connect(&dbCredential)
